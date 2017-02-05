@@ -1,6 +1,6 @@
 # Cap LUIS bot POC
 - Responses stored in MongoDB are in the "Responses" folder
-- LUIS app is in the LUIS Export.json
+- LUIS app can be imported through CapLUIS.json
 
 
 Notes:
