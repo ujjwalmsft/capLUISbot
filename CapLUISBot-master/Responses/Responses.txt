@@ -1,0 +1,101 @@
+{
+    "intent": "GetMallAddress",
+    "entity": ["bugis"],
+    "choices": ["bugis +", "bugis junction"],
+    "response": "Did you mean Bugis + or Bugis Junction?"
+}
+
+{
+    "intent": "GetMallAddress",
+    "entity": ["bugis +", "bugis plus", "b +"],
+    "response": "Bugis+ is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.301060,103.855990&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+    "intent": "GetMallAddress",
+    "entity": ["bugis junction", "bugisjunction"],
+    "response": "Bugis Junction is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.299600,103.855128&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+    "intent": "GetMallAddress",
+    "entity": ["junction 8", "junction8", "j8"],
+    "response": "Junction 8 is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.3507172,103.8465101&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+	"intent": "GetMallAddress",
+    "entity": ["clarke quay", "clarkequay", "clarke key", "clarke", "cq"], 
+	"response": "Clarke Quay is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.2906078,103.8442855&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+	"intent": "GetMallAddress",
+    "entity": ["lot one", "lotone", "lot", "l1", "lot1", "lot 1"],
+	"response": "Lot One is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.3851594,103.7428118&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+    "intent": "GetOperatingHours",
+    "entity": ["bugis +", "bugis plus", "b +"],
+    "response": "The operating hours of Bugis+ is 10AM - 10PM"
+}
+
+{
+    "intent": "GetOperatingHours",
+    "entity": ["bugis junction", "bugisjunction"],
+    "response": "The operating hours of Bugis Junction is 10AM - 10PM"
+}
+
+{
+    "intent": "GetOperatingHours",
+    "entity": ["junction 8", "junction8", "j8"],
+    "response": "The operating hours of Junction 8 is 10AM - 10PM"
+}
+
+{
+    "intent": "GetOperatingHours",
+    "entity": ["clarke quay", "clarkequay", "clarke key", "clarke", "cq"],
+    "response": "The operating hours of Clarke Quay is 10AM - 10PM"
+}
+
+{
+    "intent": "GetOperatingHours",
+    "entity": ["lot one", "lotone", "lot", "l1", "lot1", "lot 1"],
+    "response": "The operating hours of Lot One is 10AM - 10PM"
+}
+
+{
+    "intent": "GetParkingCharges",
+    "entity": ["bugis +", "bugis plus", "b +"],
+    "response": "The Car park rate at Bugis+ is as belows \n\n Mon - Thu 8.00am - 5.00pm: \n\n $1.60 for 1st hr \n\n Subsequent 10 mins or part thereof: $0.40 \n\n After 5.00pm: $2.70 per entry"
+}
+
+{
+    "intent": "GetParkingCharges",
+    "entity": ["bugis junction", "bugisjunction"],
+    "response": "The Car park rate at Bugis Junction is as below (w.e.f 15 May 2015) \n\n Mon - Thu 8.00am - 5.00pm: \n\n $1.60 for 1st hr \n\n Subsequent 10 mins or part thereof: $0.40 \n\n After 5.00pm: $2.70 per entry \n\n Fri 8.00am - 5.00pm: $1.60 for 1st hr \n\n Subsequent 10 mins or part thereof: $0.40"
+}
+
+{
+    "intent": "GetParkingCharges",
+    "entity": ["junction 8", "junction8", "j8"],
+    "response": "The Carpark rate at Junction 8 is as belows \n\n Mon - Thu 12.00am - 5.59pm: $1.07 for 1st hr \n\n Subsequent 15 mins: $0.32 \n\n 6.00pm - 11.59pm: $2.14 per entry"
+}
+
+{
+    "intent": "GetParkingCharges",
+    "entity": ["clarke quay", "clarkequay", "clarke key", "clarke", "cq"],
+    "response": "The carpark rate at Clarke Quay is as belows \n\n Mon - Fri 7.00am - 12.29am: \n\n 1st 2 hours at $2.14 \n\n Subsequent hrs at $1.07 \n\n 12.30pm - 1.30pm: Free \n\n 1.31pm - 4.59pm: 1st 2 hours at $2.14 \n\n 5.00pm to 6.59am: 1st hour at $2.14 \n\n Subsequent hrs at $1.07 (cap at $5.35)"
+}
+
+{
+    "intent": "GetParkingCharges",
+    "entity": ["lot one", "lotone", "lot", "l1", "lot1", "lot 1"],
+    "response": "The Carpark rate at Lot One is as follows: \n\n Mon - Thu \n\n 12.00am - 5.59pm: $1.07 for 1st hr \n\n Subsequent 15 mins or part thereof: $0.32 \n\n 6.00pm-11.59pm: $2.14 per entry \n\n Fri & Eve of PH \n\n 12.00am - 5.59pm $1.07 for 1st hr \n\n Subsequent 15min or part thereof: $0.32 \n\n 6.00pm - 2.59am next day: $2.14 per entry \n\n Grace period: 10 mins"
+}
+
+{
+    "intent": "GetMallNames",
+    "response": "Here are the list of malls: Bedok Mall, Bugis Junction, Bugis+, Bukit Panjang Plaza, Clarke Quay, IMM, JCube, Junction 8, Lot One, Plaza Singapura, Raffles City, Sembawang Shopping Centre, Tampines Mall, The Star Vista, Westgate"
+}

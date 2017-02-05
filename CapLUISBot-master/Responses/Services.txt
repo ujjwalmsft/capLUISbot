@@ -1,0 +1,69 @@
+{
+    "intent": "GetServices",
+    "mallEntity": ["bugis +", "bugis plus", "b +"],
+    "secondEntity": "MallService::Wifi",
+    "response": "Free WiFi at CapitaLand Malls. Connect to CAPITALAND SSID to enjoy free wireless internet surfing. Enjoy unlimited hours for CAPITASTAR members. Terms and conditions apply."
+}
+
+{
+    "intent": "GetServices",
+    "mallEntity": ["bugis junction", "bugisjunction"],
+    "secondEntity": "MallSerivce::Wifi",
+    "response": "Connect to CAPITALAND SSID to enjoy free wireless internet surfing. Enjoy unlimited hours for CAPITASTAR members. Terms and conditions apply."
+}
+
+{
+    "intent": "GetServices",
+    "mallEntity": ["junction 8", "junction8", "j8"],
+    "secondEntity": "MallService::Wifi",
+    "response": "Connect to CAPITALAND SSID to enjoy free wireless internet surfing. Enjoy unlimited hours for CAPITASTAR members. Terms and conditions apply."
+}
+
+{
+    "intent": "GetServices",
+    "mallEntity": ["clarke quay", "clarkequay", "clarke key", "clarke", "cq"],
+    "secondEntity": "MallService::Wifi",
+    "response": "Free WiFi at CapitaLand Malls. Connect to CAPITALAND SSID to enjoy free wireless internet surfing. Enjoy unlimited hours for CAPITASTAR members. Terms and conditions apply."
+}
+
+{
+    "intent": "GetServices",
+    "mallEntity": ["lot one", "lotone", "lot", "l1", "lot1", "lot 1"],
+    "secondEntity": "MallService::Wifi",
+    "response": "Free WiFi at CapitaLand Malls. Connect to CAPITALAND SSID to enjoy free wireless internet surfing. Enjoy unlimited hours for CAPITASTAR members. Terms and conditions apply."
+}
+
+{
+    "intent": "GetServices",
+    "mallEntity": ["bugis +", "bugis plus", "b +"],
+    "secondEntity": "MallService::Restrooms",
+    "response": "The restrooms are available at all levels of Bugis+."
+}
+
+{
+    "intent": "GetServices",
+    "mallEntity": ["bugis junction", "bugisjunction"],
+    "secondEntity": "MallService::Restrooms",
+    "response": "The restrooms are available at levels 1,2 and 3 of Bugis Junction."
+}
+
+{
+    "intent": "GetServices",
+    "mallEntity": ["junction 8", "junction8", "j8"],
+    "secondEntity": "MallService::Restrooms",
+    "response": "The restrooms are present in level 1 of Junction 8."
+}
+
+{
+    "intent": "GetServices",
+    "mallEntity": ["clarke quay", "clarkequay", "clarke key", "clarke", "cq"],
+    "secondEntity": "MallService::Restrooms",
+    "response": "The restrooms are present in level 1 of Clarke Quay."
+}
+
+{
+    "intent": "GetServices",
+    "mallEntity": ["lot one", "lotone", "lot", "l1", "lot1", "lot 1"],
+    "secondEntity": "MallService::Restrooms",
+    "response": "The restrooms are present in all levels of Lot one."
+}

@@ -1,0 +1,81 @@
+{
+    "intent": "GetMallAddress",
+    "entity": "Bugis Junction",
+    "response": "Bugis Junction is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.299600,103.855128&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+    "intent": "GetMallAddress",
+    "entity": "Bugis+",
+    "response": "Bugis+ is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.301060,103.855990&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+    "intent": "GetMallAddress",
+    "entity": "Bukit Panjang Plaza",
+    "response": "Bugis+ is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.377848,103.771011&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+    "intent": "GetMallAddress",
+    "entity": "IMM",
+    "response": "IMM is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.3345248,103.7448205&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+	"intent": "GetMallAddress",
+	"entity": "JCube",
+	"response": "JCube is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.3336175,103.7394884&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+	"intent": "GetMallAddress",
+	"entity": "Junction 8",
+	"response": "Junction 8 is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.3507172,103.8465101&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+	"intent": "GetMallAddress",
+	"entity": "Lot One",
+	"response": "Lot One is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.3851594,103.7428118&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+	"intent": "GetMallAddress",
+	"entity": "Plaza Singapura",
+	"response": "Plaza Singapura is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.3006309,103.8428723&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+	"intent": "GetMallAddress",
+	"entity": "Clarke Quay",
+	"response": "Clarke Quay is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.2906078,103.8442855&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+	"intent": "GetMallAddress",
+	"entity": "Raffles City",
+	"response": "Raffles City is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.2938971,103.8511071&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+	"intent": "GetMallAddress",
+	"entity": "Sembawang Shopping Centre",
+	"response": "Sembawang Shopping Centre is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.4418024,103.8226863&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+{
+	"intent": "GetMallAddress",
+	"entity": "Tampines Mall",
+	"response": "Tampines Mall is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.352614,103.9425039&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+
+{
+	"intent": "GetMallAddress",
+	"entity": "The Star Vista",
+	"response": "The Star Vista is located [here](\"https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=600x300&maptype=roadmap&markers=color:red|1.3067634,103.7862349&key=AIzaSyB345Ss9xhv5n_PdeNSUGNaX_AXM_Deb38\")"
+}
+
+
+

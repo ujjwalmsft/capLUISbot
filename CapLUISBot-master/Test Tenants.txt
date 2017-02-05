@@ -1,0 +1,84 @@
+{
+    "name": "Ajisen Japanese Restaurant",
+    "category": "food",
+    "tags": ["japanese", "ramen", "restaurant"],
+    "malls": ["Bugis+", "Junction 8"]
+}
+
+{
+    "name": "Capitol Optical",
+    "category": "optical",
+    "tags": ["glasses", "lens", "eyecare"],
+    "malls": ["Lot One", "Clarke Quay"]
+}
+
+{
+    "name": "Mcdonalds",
+    "category": "food",
+    "tags": ["fast food", "cheap", "western"],
+    "malls": ["Junction 8", "Lot One"]
+}
+
+{
+    "name": "Uniqlo",
+    "category": "clothes",
+    "tags": ["japanese", "casual"],
+    "malls": ["Bugis Junction", "Clarke Quay"]
+}
+
+{
+    "name": "G2000",
+    "category": "clothes",
+    "tags": ["formal"],
+    "malls": ["Clarke Quay", "Bugis+"]
+}
+
+{
+    "name": "Tori-Q",
+    "category": "food",
+    "tags": ["japanese", "yakitori"],
+    "malls": ["Bugis Junction", "Junction 8"]
+}
+
+{
+    "name": "Pastamania",
+    "category": "food",
+    "tags": ["italian", "restaurant", "western"],
+    "malls": ["Junction 8", "Lot One", "Bugis Junction"]
+}
+
+{
+    "name": "Nike",
+    "category": "clothes",
+    "tags": ["sports", "fitness"],
+    "malls": ["Bugis Junction"]
+}
+
+{
+    "name": "Pazzion",
+    "category": "clothes",
+    "tags": ["shoes", "footwear", "women's", "women"],
+    "malls": ["Bugis Junction", "Junction 8"]
+}
+
+{
+    "name": "Sakae Sushi",
+    "category": "food",
+    "tags": ["japanese", "restaurant", "yakitori"],
+    "malls": ["Bugis Junction", "Junction 8", "Lot One", "Plaza Singapura"]
+}
+
+{
+    "name": "Charles & Keith",
+    "category": "clothes",
+    "tags": ["women's", "women", "shoes", "footwear"],
+    "malls": ["Plaza Singapura", "Bugis Junction"]
+}
+
+{
+    "name": "Skechers",
+    "category": "clothes",
+    "tags": ["sports", "shoes", "footwear"],
+    "malls": ["Lot One", "Bugis Junction", "Junction 8"]
+}
+

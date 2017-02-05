@@ -1,0 +1,1312 @@
+{
+  "luis_schema_version": "1.3.0",
+  "name": "Sparkle",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "GetDirections"
+    },
+    {
+      "name": "GetMallAddress"
+    },
+    {
+      "name": "GetMallNames"
+    },
+    {
+      "name": "GetOperatingHours"
+    },
+    {
+      "name": "GetParkingCharges"
+    },
+    {
+      "name": "GetServices"
+    },
+    {
+      "name": "GetTenant"
+    },
+    {
+      "name": "GetTenantInfo"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Area"
+    },
+    {
+      "name": "Mall"
+    },
+    {
+      "name": "MallService",
+      "children": [
+        "BusShuttle",
+        "Restrooms",
+        "Wifi",
+        "Wheelchair"
+      ]
+    },
+    {
+      "name": "Tenant",
+      "children": [
+        "Name",
+        "Category",
+        "Tag"
+      ]
+    },
+    {
+      "name": "Transport",
+      "children": [
+        "Car",
+        "Bus",
+        "MRT"
+      ]
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [
+    {
+      "name": "Mall",
+      "mode": true,
+      "words": "junction 8,junction8,j8,clarke quay,clarkequay,clarke key,clarke,cq,lot one,lotone,lot,l1,lot1,lot 1,bugis +,bugis plus,b +,bugis junction,bugisjunction",
+      "activated": true
+    },
+    {
+      "name": "Restrooms",
+      "mode": true,
+      "words": "restroom,restrooms,toilets,toilet",
+      "activated": true
+    },
+    {
+      "name": "Tenant::Category",
+      "mode": true,
+      "words": "food,clothes,optical",
+      "activated": true
+    },
+    {
+      "name": "Tenant::Name",
+      "mode": true,
+      "words": "uniqlo,capitol optical,Ajisen Japanese Restaurant,mcdonalds,g2000,tori - q,pastamania,nike,pazzion,sakae sushi,charles & keith,skechers,nanyang optics,optical express,optical 88",
+      "activated": true
+    },
+    {
+      "name": "Tenant::Tag",
+      "mode": true,
+      "words": "japanese,ramen,formal,glasses,eyecare,restaurant,restaurants,lens,fast food,cheap,western,italian,sports,fitness,yakitori,women,shoes,footwear",
+      "activated": true
+    },
+    {
+      "name": "Wifi",
+      "mode": true,
+      "words": "wi - fi,wifi,internet",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "hi",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "list capitaland malls",
+      "intent": "GetMallNames",
+      "entities": []
+    },
+    {
+      "text": "list all malls",
+      "intent": "GetMallNames",
+      "entities": []
+    },
+    {
+      "text": "show me all the malls",
+      "intent": "GetMallNames",
+      "entities": []
+    },
+    {
+      "text": "list me the malls",
+      "intent": "GetMallNames",
+      "entities": []
+    },
+    {
+      "text": "what malls are around bedok",
+      "intent": "GetMallNames",
+      "entities": [
+        {
+          "entity": "Area",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "list malls around bedok",
+      "intent": "GetMallNames",
+      "entities": [
+        {
+          "entity": "Area",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what are the malls around bugis",
+      "intent": "GetMallNames",
+      "entities": [
+        {
+          "entity": "Area",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "mall names",
+      "intent": "GetMallNames",
+      "entities": []
+    },
+    {
+      "text": "when does bedok mall open?",
+      "intent": "GetOperatingHours",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what's the opening hours of cq",
+      "intent": "GetOperatingHours",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what time does cq open",
+      "intent": "GetOperatingHours",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what time does cq close",
+      "intent": "GetOperatingHours",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "when does cq open",
+      "intent": "GetOperatingHours",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "what time is cq closing",
+      "intent": "GetOperatingHours",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "when does j8 open",
+      "intent": "GetOperatingHours",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "what time j8 close ah",
+      "intent": "GetOperatingHours",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "when does j8 close",
+      "intent": "GetOperatingHours",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "what are the opening hours of j8",
+      "intent": "GetOperatingHours",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "what are the operating hours of j8",
+      "intent": "GetOperatingHours",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "what are the operating hours of clarke quay",
+      "intent": "GetOperatingHours",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what are the operating hours of junction 8",
+      "intent": "GetOperatingHours",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "when does junction 8 open",
+      "intent": "GetOperatingHours",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "when does lot1 open",
+      "intent": "GetOperatingHours",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "where is bedok mall?",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what's the address of bedok mall",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what's the address of bugis junction",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what is the address of bedok mall",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "address of bugis junction",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "what's the address of junction 8",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what's the address of bugis+",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what's the address of clarke quay",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what's the address of plaza sing",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what's the address of l1",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "where is l1",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "where is lotone",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "where is clarkequay",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "what's the address of lot one",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 6,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what's the address of cq",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "where is cq",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "where is plaza",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "what is the address of bugis junction",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "where is bedok mall",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "where is bugis",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "what's the address of bugis",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "what's the address of j8",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "what's the address",
+      "intent": "GetMallAddress",
+      "entities": []
+    },
+    {
+      "text": "bugis junction",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "where is j8",
+      "intent": "GetMallAddress",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "how much to park in bedok mall?",
+      "intent": "GetParkingCharges",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "what's the parking charge in bedok mall",
+      "intent": "GetParkingCharges",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 7,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "cost to park in bedok mall",
+      "intent": "GetParkingCharges",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how much does it cost to park in cq",
+      "intent": "GetParkingCharges",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 8,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "what's the parking charges at j8",
+      "intent": "GetParkingCharges",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "how much to park at lot1",
+      "intent": "GetParkingCharges",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how much to park at bugis junction",
+      "intent": "GetParkingCharges",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "what's the parking charge at bugis",
+      "intent": "GetParkingCharges",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "what's the parking charge at cq",
+      "intent": "GetParkingCharges",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 7,
+          "endPos": 7
+        }
+      ]
+    },
+    {
+      "text": "parking charge?",
+      "intent": "GetParkingCharges",
+      "entities": []
+    },
+    {
+      "text": "how much to park at j8",
+      "intent": "GetParkingCharges",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how much to park at bugis",
+      "intent": "GetParkingCharges",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "how do i get to junction 8?",
+      "intent": "GetDirections",
+      "entities": [
+        {
+          "entity": "Mall",
+          "startPos": 5,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "is there wifi in bugis+",
+      "intent": "GetServices",
+      "entities": [
+        {
+          "entity": "MallService::Wifi",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Mall",
+          "startPos": 4,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "is there restrooms in j8",
+      "intent": "GetServices",
+      "entities": [
+        {
+          "entity": "MallService::Restrooms",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Mall",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "is there wifi in cq",
+      "intent": "GetServices",
+      "entities": [
+        {
+          "entity": "MallService::Wifi",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Mall",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "is there wifi in lot1",
+      "intent": "GetServices",
+      "entities": [
+        {
+          "entity": "MallService::Wifi",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Mall",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "does lot1 have wifi",
+      "intent": "GetServices",
+      "entities": [
+        {
+          "entity": "MallService::Wifi",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Mall",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "does cq have restrooms",
+      "intent": "GetServices",
+      "entities": [
+        {
+          "entity": "MallService::Restrooms",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Mall",
+          "startPos": 1,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "where are restrooms in j8",
+      "intent": "GetServices",
+      "entities": [
+        {
+          "entity": "MallService::Restrooms",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Mall",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "is there toilets in lot1",
+      "intent": "GetServices",
+      "entities": [
+        {
+          "entity": "MallService::Restrooms",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Mall",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "are there toilets in junction8",
+      "intent": "GetServices",
+      "entities": [
+        {
+          "entity": "MallService::Restrooms",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Mall",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "is there internet in j8",
+      "intent": "GetServices",
+      "entities": [
+        {
+          "entity": "MallService::Wifi",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Mall",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "is there toilet in cq",
+      "intent": "GetServices",
+      "entities": [
+        {
+          "entity": "MallService::Restrooms",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Mall",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "is there internet",
+      "intent": "GetServices",
+      "entities": [
+        {
+          "entity": "MallService::Wifi",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "got toilet in j8 anot",
+      "intent": "GetServices",
+      "entities": [
+        {
+          "entity": "MallService::Restrooms",
+          "startPos": 1,
+          "endPos": 1
+        },
+        {
+          "entity": "Mall",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "is there toilets",
+      "intent": "GetServices",
+      "entities": [
+        {
+          "entity": "MallService::Restrooms",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for japanese food",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Tenant::Category",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i want formal clothes",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Tenant::Category",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want casual clothes",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Tenant::Category",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "is there japanese food",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Tenant::Category",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want restaurants",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i want japanese",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for formal clothing",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 5,
+          "endPos": 5
+        },
+        {
+          "entity": "Tenant::Category",
+          "startPos": 6,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "i want glasses and western",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "i'm looking for japanese",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 5,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "i want japanese ramen",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want western japanese",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want optical",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Category",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i want japanese clothes",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Tenant::Category",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want japanese food",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Tenant::Category",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want japanese western",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "i want ajisen japanese restaurant",
+      "intent": "GetTenant",
+      "entities": [
+        {
+          "entity": "Tenant::Name",
+          "startPos": 2,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "is there any optical?",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Category",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "is there japanese",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "is there any japanese food",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 3,
+          "endPos": 3
+        },
+        {
+          "entity": "Tenant::Category",
+          "startPos": 4,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "is there japanese ramen?",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 2,
+          "endPos": 2
+        },
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 3,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "is there japanese?",
+      "intent": "GetTenantInfo",
+      "entities": [
+        {
+          "entity": "Tenant::Tag",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i want uniqlo",
+      "intent": "GetTenant",
+      "entities": [
+        {
+          "entity": "Tenant::Name",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "i want g2000",
+      "intent": "GetTenant",
+      "entities": [
+        {
+          "entity": "Tenant::Name",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "is there uniqlo",
+      "intent": "GetTenant",
+      "entities": [
+        {
+          "entity": "Tenant::Name",
+          "startPos": 2,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "is there capitol optical",
+      "intent": "GetTenant",
+      "entities": [
+        {
+          "entity": "Tenant::Name",
+          "startPos": 2,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "is there ajisen japanese restaurant",
+      "intent": "GetTenant",
+      "entities": [
+        {
+          "entity": "Tenant::Name",
+          "startPos": 2,
+          "endPos": 4
+        }
+      ]
+    }
+  ]
+}
